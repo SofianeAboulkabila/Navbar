@@ -12,7 +12,6 @@ body {
     background: white;
     align-items: center;
     display: flex;
-    border-bottom: 1px solid black;
 }
 #restau-name{
     position: absolute;
@@ -27,7 +26,6 @@ body {
     justify-content: center;
     background: rgb(255, 255, 255);
     border-radius: 0 0 100px 100px;
-    border: 1px solid black;
     left: 50%;
     top: -126px;
     z-index: -1;
@@ -38,7 +36,6 @@ body {
     height: 90px;
     position: absolute;
     bottom: 5px;
-    border: 1px solid black;
     border-radius: 100px;
 }
 .alt-logo {
@@ -52,7 +49,7 @@ body {
     box-shadow: 3px 3px 3px gray;
 }
 .alt-logo:hover {
-    filter: contrast(200%);
+    filter: contrast(120%);
 }
 #band-logo-name {
     height: 32px;
@@ -85,31 +82,76 @@ body {
 .alt-band {
     width: 90px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     #navbar {
         height: 50px;
     }
     .band {
-      height: 200px;
-      width: 75px;
+      height: 220px;
+      width: 105px;
       top: -82px;
       border-radius: 0 0 50px 50px;
     }
-    #logo, .alt-logo {
-      height: 60px;
-      bottom: 3px;
+    #logo {
+      height: 75px;
+      bottom: 6px;
     }
     .alt-logo {
-      height: 40px;
-      bottom: 15px;
+      height: 62px;
+      bottom: 18px;
     }
     #band-logo-name {
-      height: 24px;
-      top: 50px;
+      height: 22px;
+      top: 57px;
     }
     .alt-logo-name {
-      height: 130px;
-      top: 4px;
+      height: 126px;
+      top: 8px;
+    }
+    .alt-band {
+      width: 75px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 47px;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 190px;
+      width: 82px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 56px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 42px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 19px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 107px;
+      top: 19px;
     }
     .alt-band {
       width: 60px;
@@ -122,5 +164,143 @@ body {
     }
     #band-contact {
         left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 190px;
+      width: 68px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 53px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 38px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 19px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 108px;
+      top: 17px;
+    }
+    .alt-band {
+      width: 48px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 180px;
+      width: 57px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 48px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 35px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 18px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 100px;
+      top: 18px;
+    }
+    .alt-band {
+      width: 40px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    #navbar {
+        height: 35px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 170px;
+      width: 48px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 43px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 32px;
+      bottom: 10px;
+    }
+    #band-logo-name {
+      height: 18px;
+      top: 55px;
+    }
+    .alt-logo-name {
+      height: 95px;
+      top: 20px;
+    }
+    .alt-band {
+      width: 35px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
     }
   }
