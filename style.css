@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: cyan;
+}
+#navbar {
+    width: 100vw;
+    position: absolute;
+    height: 70px;
+    background: white;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+#restau-name{
+    position: absolute;
+    left: 10vw;
+    height: 2rem;
+}
+.band {
+    height: 300px;
+    width: 110px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 100px 100px;
+    border: 1px solid black;
+    left: 50%;
+    top: -126px;
+    z-index: -1;
+    transition: 0.75s;
+    transform: translateX(-50%);
+}
+#logo, .alt-logo {
+    height: 90px;
+    position: absolute;
+    bottom: 5px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+.alt-logo {
+    height: 70px;
+    border-radius: 0;
+    border: 0;
+    bottom: 20px;
+}
+#logo:hover {
+    filter: contrast(300%);
+    box-shadow: 3px 3px 3px gray;
+}
+.alt-logo:hover {
+    filter: contrast(200%);
+}
+#band-logo-name {
+    height: 32px;
+    position: absolute;
+    rotate: 90deg;
+    top: 86px;
+}
+.alt-logo-name {
+    height: 190px;
+    position: absolute;
+    top: 5px;
+}
+.band:hover {
+    top: 66px;
+    transition: 0.75s;
+}
+
+#band-home {
+    position: absolute;
+    left: 62.5%;
+    background-color: #3E5BF0;
+}
+#band-plats {
+    left: 75%;
+}
+#band-contact {
+    left: 87.5%;
+    background-color: #FF0000;
+}
+.alt-band {
+    width: 90px;
+}
+@media screen and (max-width: 900px) {
+    #navbar {
+        height: 50px;
+    }
+    .band {
+      height: 200px;
+      width: 75px;
+      top: -82px;
+      border-radius: 0 0 50px 50px;
+    }
+    #logo, .alt-logo {
+      height: 60px;
+      bottom: 3px;
+    }
+    .alt-logo {
+      height: 40px;
+      bottom: 15px;
+    }
+    #band-logo-name {
+      height: 24px;
+      top: 50px;
+    }
+    .alt-logo-name {
+      height: 130px;
+      top: 4px;
+    }
+    .alt-band {
+      width: 60px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+  }
